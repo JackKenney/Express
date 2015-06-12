@@ -26,3 +26,16 @@ This should now be all set to add to the public folder any site files to be used
 
     nodejs server.js 
 will run the server on whatever port is listed in running, on box ip (in dev)
+
+if you ever forget the mysql password, it can be changed with 
+
+PLEASE REMEMBER TO SET A PASSWORD FOR TEH MySQL root USER !
+To do so, start the server, then issue the following commands:
+
+    /usr/bin/mysqladmin -u root password 'new-password'
+    /usr/bin/mysqladmin -u root -h ubuntu password 'new-password'
+Alternatively, you can run:
+
+    /usr/bin/mysql_secure_installation
+which will also give you the option of removing the test databases and anonymous user created by default. 
+This is strongly recommended for production servers.
