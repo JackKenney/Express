@@ -39,3 +39,25 @@ Alternatively, you can run:
     /usr/bin/mysql_secure_installation
 which will also give you the option of removing the test databases and anonymous user created by default. 
 This is strongly recommended for production servers.
+
+To establish a HeidiSQL to MySQL Database connection, follow these steps:
+Download plink.exe from the PuTTy Download page: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+Place in folder where it makes sense (and won't be moved)
+If running linux or mac, install wine, then download Heidi and install it.
+
+For development, use 
+(under settings tab)
+    Network Type:  MySQL (SSH Tunnel)
+    Hostname/IP:  127.0.0.1
+    User: root (Database)
+    Password: password (Database)
+    Port: 3306
+    Databases: [database name]
+(under SSH tunnel tab)
+    plink.exe location: [wherever you put it]
+    SSH host + port: Server IP (192.168.1... + 22)
+    username: [server username]
+    password: [server password]
+*if using a private SSL key instead, there are other settings for that.
+Click "Open" and it shouldn't give you any errors.
+    if it does, this article may help: http://www.bramschoenmakers.nl/en/node/595
