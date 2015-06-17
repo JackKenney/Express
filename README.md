@@ -40,6 +40,8 @@ Alternatively, you can run:
 which will also give you the option of removing the test databases and anonymous user created by default. 
 This is strongly recommended for production servers.
 
+USING DATABASE CLIENT:
+
 To establish a HeidiSQL to MySQL Database connection, follow these steps:
 Download plink.exe from the PuTTy Download page: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
 Place in folder where it makes sense (and won't be moved)
