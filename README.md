@@ -64,3 +64,9 @@ For development, use
 *if using a private SSL key instead, there are other settings for that.
 Click "Open" and it shouldn't give you any errors.
     if it does, this article may help: http://www.bramschoenmakers.nl/en/node/595
+
+USER AUTHENTICATION:
+
+Salted Hashes calculated and stored server-side
+https://crackstation.net/hashing-security.htm#attacks
+
