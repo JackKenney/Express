@@ -19,7 +19,7 @@ Add package.json file:
 Then install all dependencies listed in package.json, 
 after making sure that the versions listed are current:
 
-    npm install express socket.io mysql --save 
+    npm install express socket.io mysql bootstrap --save 
   *this will save them to the dependencies in the package.json created with the init command.
 
 This should now be all set to add to the public folder any site files to be used and to start any database interactions as well. Most commands for database will be through "mysql -u root -p" and a login there. 
